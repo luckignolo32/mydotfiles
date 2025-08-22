@@ -1,0 +1,3 @@
+[submodule ".config/hypr/nvim"]
+	path = .config/hypr/nvim
+	url = https://github.com/luckignolo32/nvim
