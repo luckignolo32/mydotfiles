@@ -1,0 +1,92 @@
+/* --- Global Styles --- */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", FontAwesome, sans-serif;
+    font-size: 14px;
+    min-height: 0;
+}
+
+/* The whole bar */
+window#waybar {
+    background: #1e1e2e; /* Dark background */
+    color: #cdd6f4;      /* Light text */
+}
+
+/* Each module */
+#workspaces,
+#window,
+#clock,
+#network,
+#pulseaudio,
+#tray,
+#custom-pomodoro {
+    padding: 0 10px; /* Horizontal padding */
+    margin: 0 4px;   /* Horizontal margin between modules */
+}
+
+/* --- Module-Specific Styles --- */
+
+#workspaces {
+    background: #313244;
+    padding: 0;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    color: #a6adc8; /* Inactive workspace color */
+}
+
+/* :hover is optional, but adds a nice touch */
+#workspaces button:hover {
+    background: #45475a;
+    color: #cdd6f4;
+}
+
+#workspaces button.focused {
+    background: #89b4fa; /* Blue for focused workspace */
+    color: #1e1e2e;      /* Dark text on focused */
+}
+
+#workspaces button.urgent {
+    background: #f38ba8; /* Red for urgent workspace */
+    color: #1e1e2e;
+}
+
+/* Style the focused window title */
+#window {
+    font-weight: bold;
+    color: #cdd6f4;
+}
+
+/* --- Right-align Modules --- */
+/* (Colors are from the Catppuccin Mocha theme, a popular dark theme) */
+
+#clock {
+    background-color: #45475a;
+    color: #cdd6f4;
+}
+
+#network {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+}
+
+#network.disconnected {
+    background-color: #f38ba8; /* Red when disconnected */
+}
+
+#pulseaudio {
+    background-color: #a6e3a1;
+    color: #1e1e2e;
+}
+
+#pulseaudio.muted {
+    background-color: #6c7086; /* Grey when muted */
+    color: #cdd6f4;
+}
+
+#custom-pomodoro {
+    background-color: #f38ba8;
+    color: #1e1e2e;
+}

@@ -2,7 +2,7 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["network", "pulseaudio", "battery", "clock"],
+  "modules-right": ["custom/pomodoro", "network", "pulseaudio", "battery", "clock"],
   "clock": {
     "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -36,5 +36,19 @@
           "default": ["", "", " "]
       },
       "on-click": "pavucontrol"
-  }
+  },
+
+  // --- Pomodoro Timer Module ---
+    // This requires an external script. A popular one is "waybar-timer".
+    // 1. Install it (e.g., `yay -S waybar-timer` on Arch)
+    // 2. Run `waybar-timer --init` in your terminal ONCE to start the server.
+    // 3. Add `exec_always waybar-timer` to your sway/hyprland config to auto-start it.
+//    "custom/pomodoro": {
+//        "format": "🍅 {}",
+//       "exec": "waybar-timer --status", // Get status from the server
+//        "return-type": "json",
+//        "on-click": "waybar-timer --toggle", // Left-click: play/pause
+//        "on-click-right": "waybar-timer --stop", // Right-click: stop/reset
+//        "tooltip": true
+//    }
 }
