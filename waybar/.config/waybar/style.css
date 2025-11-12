@@ -1,0 +1,105 @@
+/*
+ * A minimal Waybar style adhering to black/white/orange color constraints.
+ * All color values are hardcoded to avoid parsing errors.
+ * 'position' property has been removed to fix parser errors.
+ */
+
+/* --- General Bar --- */
+* {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    font-family: "MesloLGS Nerd Font Mono Bold";
+    font-size: 16px;
+    font-weight: bold;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #000000;
+    color: #ffffff;
+    transition: none;
+}
+
+/* --- Module Layouts --- */
+
+/* * This block is now intentionally left blank.
+ * We are reverting to Waybar's default centering behavior,
+ * as the 'position' property is not supported.
+ */
+.modules-center {
+    background: #000000; /* Match bar background */
+}
+
+/* --- Generic Module Styling --- */
+#workspaces,
+#custom-media,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#battery,
+#clock,
+#window {
+    padding: 0 6px; /* Compact horizontal padding */
+    margin: 0 2px;  /* Compact horizontal margin */
+    color: #ffffff;
+    background: transparent;
+}
+
+button {
+    background: inherit;
+    color: inherit;
+}
+
+button:hover {
+    background: rgba(40, 40, 40, 0.7); /* A shade of black */
+    color: #fab387; /* Orange */
+}
+
+/* --- Left Modules --- */
+#workspaces button {
+    padding: 2px 5px;
+    color: #ffffff;
+}
+
+#workspaces button.focused {
+    color: #fab387; /* Orange */
+    background: rgba(40, 40, 40, 0.7); /* A shade of black */
+}
+
+#custom-media {
+    padding-right: 10px; /* Add some space next to center module */
+}
+
+/* --- Center Module --- */
+#window {
+    color: #fab387; /* Make active window title orange */
+    font-weight: bold;
+}
+
+/* --- Right Modules --- */
+.modules-right {
+    padding-left: 10px; /* Add some space next to center module */
+}
+
+/* Highlight critical system stats in orange */
+#cpu {
+    color: #fab387;
+}
+
+#memory {
+    color: #fab387;
+}
+
+#temperature {
+    color: #fab387;
+}
+
+/* Use orange for battery warning/critical states */
+#battery.warning,
+#battery.critical {
+    color: #fab387;
+}
