@@ -1,4 +1,4 @@
-# luckignolo32's dotfiles
+# My dotfiles
 
 My dotfiles on my Arch Linux machine running Hyprland. 
 
