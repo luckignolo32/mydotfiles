@@ -6,19 +6,19 @@
 
 /* --- General Bar --- */
 * {
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    font-family: "MesloLGS Nerd Font Mono Bold";
-    font-size: 16px;
-    font-weight: bold;
-    min-height: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: "MesloLGS Nerd Font Mono Bold";
+  font-size: 17px;
+  font-weight: bold;
+  min-height: 0;
 }
 
 window#waybar {
-    background: #000000;
-    color: #ffffff;
-    transition: none;
+  background: #000000;
+  color: #ffffff;
+  transition: none;
 }
 
 /* --- Module Layouts --- */
@@ -28,78 +28,105 @@ window#waybar {
  * as the 'position' property is not supported.
  */
 .modules-center {
-    background: #000000; /* Match bar background */
+  background: #000000;
+  /* Match bar background */
 }
 
 /* --- Generic Module Styling --- */
 #workspaces,
 #custom-media,
-#pulseaudio,
 #network,
 #cpu,
 #memory,
-#temperature,
 #backlight,
-#battery,
 #clock,
 #window {
-    padding: 0 6px; /* Compact horizontal padding */
-    margin: 0 2px;  /* Compact horizontal margin */
-    color: #ffffff;
-    background: transparent;
+  padding: 0 4px;
+  /* Compact horizontal padding */
+  margin: 0 2px;
+  /* Compact horizontal margin */
+  color: #ffffff;
+  background: transparent;
 }
 
 button {
-    background: inherit;
-    color: inherit;
+  background: inherit;
+  color: inherit;
 }
 
 button:hover {
-    background: rgba(40, 40, 40, 0.7); /* A shade of black */
-    color: #fab387; /* Orange */
+  background: rgba(40, 40, 40, 0.7);
+  /* A shade of black */
+  color: #fab387;
+  /* Orange */
 }
 
 /* --- Left Modules --- */
 #workspaces button {
-    padding: 2px 5px;
-    color: #ffffff;
+  padding: 2px 5px;
+  color: #ffffff;
 }
 
 #workspaces button.focused {
-    color: #fab387; /* Orange */
-    background: rgba(40, 40, 40, 0.7); /* A shade of black */
+  color: #fab387;
+  /* Orange */
+  background: rgba(40, 40, 40, 0.7);
+  /* A shade of black */
 }
 
 #custom-media {
-    padding-right: 10px; /* Add some space next to center module */
+  padding-right: 10px;
+  /* Add some space next to center module */
 }
 
 /* --- Center Module --- */
 #window {
-    color: #fab387; /* Make active window title orange */
-    font-weight: bold;
+  color: #fab387;
+  /* Make active window title orange */
+  font-weight: bold;
 }
 
 /* --- Right Modules --- */
 .modules-right {
-    padding-left: 10px; /* Add some space next to center module */
+  padding-left: 10px;
+  /* Add some space next to center module */
+}
+
+#temperature {
+  padding: 1px 1px;
 }
 
 /* Highlight critical system stats in orange */
 #cpu {
-    color: #fab387;
+  color: #fab387;
+  padding: 0 3px;
 }
 
 #memory {
-    color: #fab387;
+  padding: 0 6px;
+  color: #fab387;
+  margin-left: 0;
 }
 
 #temperature {
-    color: #fab387;
+  color: #fab387;
+}
+
+
+#battery {
+  padding: 0;
 }
 
 /* Use orange for battery warning/critical states */
 #battery.warning,
 #battery.critical {
-    color: #fab387;
+  color: #fab387;
+}
+
+#pulseaudio {
+  padding: 0 1px;
+}
+
+#clock {
+  padding: 0 1px;
 }
