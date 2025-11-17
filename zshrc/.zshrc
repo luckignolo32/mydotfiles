@@ -1,5 +1,5 @@
 eval "$(starship init zsh)"
-neofetch
+fastfetch
 export XDG_DATA_DIRS="$XDG_DATA_DIRS:/var/lib/snapd/desktop"
 
 export NVM_DIR="$HOME/.config/nvm"
