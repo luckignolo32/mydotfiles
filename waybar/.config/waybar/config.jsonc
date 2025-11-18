@@ -75,7 +75,7 @@
     "tooltip-format-wifi": "{essid} - {ifname} ({ipaddr})",
     "tooltip-format-ethernet": "{ipaddr}/{cidr} ({ipaddr})",
     "format-linked": "󰈂",
-    "format-disconnected": "Disconnected Disconnect",
+    "format-disconnected": "Disconnected",
     "format-alt": "{ifname}: {ipaddr}/{cidr}"
   },
   "pulseaudio": {
