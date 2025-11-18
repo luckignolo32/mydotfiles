@@ -112,17 +112,6 @@ button:hover {
   color: #fab387;
 }
 
-
-#battery {
-  padding: 0;
-}
-
-/* Use orange for battery warning/critical states */
-#battery.warning,
-#battery.critical {
-  color: #fab387;
-}
-
 #pulseaudio {
   padding: 0 1px;
 }
