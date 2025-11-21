@@ -67,7 +67,7 @@ button:hover {
   color: #ffffff;
 }
 
-#workspaces button.active{
+#workspaces button.active {
   color: #fab387;
   /* Orange */
   background: rgba(40, 40, 40, 0.7);
