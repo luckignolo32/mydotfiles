@@ -21,6 +21,7 @@ window#waybar {
   transition: none;
 }
 
+
 /* --- Module Layouts --- */
 
 /* * This block is now intentionally left blank.
@@ -72,6 +73,10 @@ button:hover {
   /* Orange */
   background: rgba(40, 40, 40, 0.7);
   /* A shade of black */
+}
+
+#workspaces button.urgent{
+  color: #eba0ac;
 }
 
 #custom-media {

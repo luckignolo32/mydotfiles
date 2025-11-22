@@ -58,7 +58,8 @@
     ]
   },
   "backlight": {
-    "format": "{percent}% {icon}",
+    "format": "{icon}",
+    "tooltip-format": "Brightness: {percent}%",
     "format-icons": [
       "󰃚",
       "󰃛",
@@ -74,11 +75,11 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "{capacity}% {icon}",
-    "format-full": "{capacity}% {icon}",
-    "format-charging": "{capacity}% 󰂄",
-    "format-plugged": "{capacity}% ",
-    "format-alt": "{time} {icon}",
+    "format": "{icon}",
+    "format-charging": "{icon}",
+    "format-plugged": "{icon}",
+    "format-full": "{icon}",
+    "tooltip-format": "Capacity: {capacity}%\n{timeTo}\n",
     "format-icons": [
       "󰂎",
       "󰁺",
@@ -90,7 +91,7 @@
       "󰂀",
       "󰂁",
       "󰂂",
-      "󱟢"
+      "󰁹"
     ]
   },
   "network": {
