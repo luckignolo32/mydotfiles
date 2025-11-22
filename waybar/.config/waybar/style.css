@@ -119,7 +119,7 @@ button:hover {
 
 
 #battery {
-  padding: 0;
+  padding: 0 2px;
 }
 
 /* Use orange for battery warning/critical states */

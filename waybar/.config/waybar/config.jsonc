@@ -76,9 +76,9 @@
       "critical": 15
     },
     "format": "{icon}",
-    "format-charging": "{icon}",
-    "format-plugged": "{icon}",
-    "format-full": "{icon}",
+    "format-charging": "",
+    "format-plugged": "",
+    "format-full": "󰂄",
     "tooltip-format": "Capacity: {capacity}%\n{timeTo}\n",
     "format-icons": [
       "󰂎",
