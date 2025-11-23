@@ -122,8 +122,12 @@ button:hover {
   padding: 0 2px;
 }
 
-/* Use orange for battery warning/critical states */
-#battery.warning,
+/* Use orange for battery critical state */
+#battery.warning {
+  color: #fab387;
+}
+
+/* Use red for battery critical state */
 #battery.critical {
   color: #fab387;
 }
