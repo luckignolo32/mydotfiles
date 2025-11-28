@@ -129,7 +129,7 @@ button:hover {
 
 /* Use red for battery critical state */
 #battery.critical {
-  color: #eba0ac;
+  color: red;
 }
 
 #pulseaudio {
