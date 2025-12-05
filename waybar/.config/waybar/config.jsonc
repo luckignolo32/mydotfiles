@@ -5,7 +5,7 @@
   "spacing": 4, // Gaps between modules (4px)
   "modules-left": [
     "hyprland/workspaces",
-    "custom/media"
+    "mpris"
   ],
   "modules-center": [
     "hyprland/window"
@@ -115,5 +115,23 @@
     },
     "escape": true,
     "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"
+  },
+  "mpris": {
+    "format": "{player_icon} {dynamic}",
+    "dynamic-order": ["artist", "title"],
+    "format-paused": "{status_icon} <i>{dynamic}</i>",
+    "tooltip": true,
+    "tooltip-format": "[{position}/{length}]",
+    "interval": 1,
+    "player-icons": {
+      "default": "▶",
+      "mpv": "🎵",
+      "spotify": " ",
+      "youtube": ""
+    },
+    "status-icons": {
+      "paused": "⏸"
+    },
+    "max-length": 30
   }
 }

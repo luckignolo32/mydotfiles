@@ -41,7 +41,7 @@ window#waybar {
 #pulseaudio,
 #battery,
 #window {
-  padding: 0 4px;
+  padding: 1px 4px;
   /* Compact horizontal padding */
   margin: 0 2px;
   /* Compact horizontal margin */
@@ -99,4 +99,16 @@ button:hover {
 /* Use red for battery critical state */
 #battery.critical {
   color: red;
+}
+
+#mpris {
+    font-size: 12;
+    padding: 0 10px;
+    margin: 3px 5px;
+    border-radius: 15px;       /* Pill shape */
+    border: 1px solid #fab387; /* Orange border (optional) */
+}
+
+#mpris.paused {
+    border-color: #585b70;     /* Grey border when paused */
 }
