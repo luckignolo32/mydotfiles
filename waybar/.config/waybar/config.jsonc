@@ -13,9 +13,6 @@
   "modules-right": [
     "pulseaudio",
     "network",
-    "cpu",
-    "memory",
-    "temperature",
     "backlight",
     "battery",
     "clock"
@@ -40,23 +37,6 @@
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "format-alt": "{:%Y-%m-%d}"
   },
-  "cpu": {
-    "format": "{usage}% ",
-    "tooltip": false
-  },
-  "memory": {
-    "format": "{}% "
-  },
-  "temperature": {
-    "thermal-zone": 2,
-    "critical-threshold": 80,
-    "format": "{temperatureC}°C {icon}",
-    "format-icons": [
-      "",
-      "",
-      ""
-    ]
-  },
   "backlight": {
     "format": "{icon}",
     "tooltip-format": "Brightness: {percent}%",
@@ -75,11 +55,11 @@
       "warning": 30,
       "critical": 20
     },
-    "format": "{icon}",
-    "format-charging": "",
-    "format-plugged": "",
-    "format-full": "󰂄",
-    "tooltip-format": "Capacity: {capacity}%\n{timeTo}\n",
+    "format": "{icon} {capacity}%",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
+    "format-full": " {capacity}% 󰂄",
+    "tooltip-format": "{timeTo}",
     "format-icons": [
       "󰂎",
       "󰁺",
@@ -104,9 +84,9 @@
     "format-alt": "{ifname}: {ipaddr}/{cidr}"
   },
   "pulseaudio": {
-    "format": "{volume}% {icon} {format_source}",
-    "format-bluetooth": "{volume}% {icon} BLUETOOTH {format_source}",
-    "format-bluetooth-muted": "󰝟 {icon} BLUETOOTH {format_source}",
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": "󰝟 {icon} {format_source}",
     "format-muted": "󰝟 {format_source}",
     "format-source": "{volume}% 󰍬",
     "format-source-muted": "󰍭",

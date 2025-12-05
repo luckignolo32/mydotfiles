@@ -35,12 +35,11 @@ window#waybar {
 
 /* --- Generic Module Styling --- */
 #workspaces,
-#custom-media,
 #network,
-#cpu,
-#memory,
 #backlight,
 #clock,
+#pulseaudio,
+#battery,
 #window {
   padding: 0 4px;
   /* Compact horizontal padding */
@@ -75,13 +74,8 @@ button:hover {
   /* A shade of black */
 }
 
-#workspaces button.urgent{
+#workspaces button.urgent {
   color: #eba0ac;
-}
-
-#custom-media {
-  padding-right: 10px;
-  /* Add some space next to center module */
 }
 
 /* --- Center Module --- */
@@ -97,31 +91,6 @@ button:hover {
   /* Add some space next to center module */
 }
 
-#temperature {
-  padding: 1px 1px;
-}
-
-/* Highlight critical system stats in orange */
-#cpu {
-  color: #fab387;
-  padding: 0 3px;
-}
-
-#memory {
-  padding: 0 6px;
-  color: #fab387;
-  margin-left: 0;
-}
-
-#temperature {
-  color: #fab387;
-}
-
-
-#battery {
-  padding: 0 2px;
-}
-
 /* Use orange for battery critical state */
 #battery.warning {
   color: #fab387;
@@ -130,12 +99,4 @@ button:hover {
 /* Use red for battery critical state */
 #battery.critical {
   color: red;
-}
-
-#pulseaudio {
-  padding: 0 1px;
-}
-
-#clock {
-  padding: 0 1px;
 }
