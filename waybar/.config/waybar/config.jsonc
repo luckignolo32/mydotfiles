@@ -11,6 +11,7 @@
     "hyprland/window"
   ],
   "modules-right": [
+    "custom/pomodoro",
     "pulseaudio",
     "network",
     "backlight",
@@ -91,12 +92,12 @@
     "format-source": "{volume}% 󰍬",
     "format-source-muted": "󰍭",
     "format-icons": {
-      "headphone": "Headphones",
-      "hands-free": "Handsfree",
-      "headset": "Headset",
-      "phone": "Phone",
-      "portable": "Portable",
-      "car": "Car",
+      "headphone": "󰋋",
+      "hands-free": "",
+      "headset": "󰋎",
+      "phone": "",
+      "portable": "󰦢",
+      "car": "",
       "default": [
         "󰕿",
         "󰖀",
@@ -118,7 +119,10 @@
   },
   "mpris": {
     "format": "{player_icon} {dynamic}",
-    "dynamic-order": ["artist", "title"],
+    "dynamic-order": [
+      "artist",
+      "title"
+    ],
     "format-paused": "{status_icon} <i>{dynamic}</i>",
     "tooltip": true,
     "tooltip-format": "[{position}/{length}]",
@@ -133,5 +137,12 @@
       "paused": "⏸"
     },
     "max-length": 30
+  },
+  "custom/pomodoro": {
+    "format": "{}",
+    "return-type": "json",
+    "exec": "waybar-module-pomodoro",
+    "on-click": "waybar-module-pomodoro toggle",
+    "on-click-right": "waybar-module-pomodoro reset"
   }
 }

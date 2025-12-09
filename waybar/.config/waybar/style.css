@@ -39,12 +39,11 @@ window#waybar {
 #backlight,
 #clock,
 #pulseaudio,
+#custom-pomodoro,
 #battery,
 #window {
   padding: 1px 4px;
-  /* Compact horizontal padding */
   margin: 0 2px;
-  /* Compact horizontal margin */
   color: #ffffff;
   background: transparent;
 }
@@ -101,7 +100,7 @@ button:hover {
   color: red;
 }
 
-#mpris {
+#mpris, #custom-pomodoro {
     font-size: 12;
     padding: 0 10px;
     margin: 3px 5px;
